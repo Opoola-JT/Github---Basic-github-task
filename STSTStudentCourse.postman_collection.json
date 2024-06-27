@@ -19,6 +19,7 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
+									"\r",
 									"pm.test(\"Status code should have an OK string\", function () {\r",
 									"    pm.expect(pm.response.text(OK)).to.include\r",
 									"});"
@@ -195,9 +196,16 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									""
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code name has OK string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
