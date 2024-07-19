@@ -44,9 +44,9 @@ public class KongaOrderFlowTest {
         driver.findElement(By.xpath("//*[@id=\"nav-bar-fix\"]/div[1]/div/div/div[4]/a")).click();
         Thread.sleep(5000);
         //locate enter email address or phone number field and enter email address
-        driver.findElement(xpath("//*[@id=\"username\"]")).sendKeys("lordjoneszy@gmail.com");
+        driver.findElement(xpath("//*[@id=\"username\"]")).sendKeys("olabantu@gmail.com");
         //locate password field and input password
-        driver.findElement(xpath("//*[@id=\"password\"]")).sendKeys("Admin12345");
+        driver.findElement(xpath("//*[@id=\"password\"]")).sendKeys("oluwajoshua");
         //locate login button and click to signin
         driver.findElement(xpath("//*[@id=\"app-content-wrapper\"]/div[4]/section/section/aside/div[2]/div/form/div[3]/button")).click();
         //wait for home page to load
