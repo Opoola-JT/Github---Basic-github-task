@@ -101,20 +101,20 @@ public class KongaOrderFlowTest {
         driver.findElement(xpath("//*[@id=\"mainContent\"]/div/form/div/div[1]/section[1]/div/div/div[2]/div[1]/div[2]/div[1]/div/button")).click();
         Thread.sleep(10000);
         //locate the first name field and enter first name
-        driver.findElement(xpath("//*[@id=\"firstname\"]")).sendKeys("Jonah");
+        driver.findElement(xpath("//*[@id=\"firstname\"]")).sendKeys("Joshua");
         //locate the last name field and enter last name
-        driver.findElement(xpath("//*[@id=\"lastname\"]")).sendKeys("Agwuncha");
+        driver.findElement(xpath("//*[@id=\"lastname\"]")).sendKeys("Opoola");
         //locate the phone number field and enter phone number
-        driver.findElement(xpath("//*[@id=\"telephone\"]")).sendKeys("09039230556");
+        driver.findElement(xpath("//*[@id=\"telephone\"]")).sendKeys("08142485230");
         //locate street address field and input street address
-        driver.findElement(xpath("//*[@id=\"street\"]")).sendKeys("13 Abudu street, ogudu");
+        driver.findElement(xpath("//*[@id=\"street\"]")).sendKeys("1, Adebowale Close, Omole Phase 1");
         //locate city field and input city
-        driver.findElement(xpath("//*[@id=\"city\"]")).sendKeys("Ogudu");
+        driver.findElement(xpath("//*[@id=\"city\"]")).sendKeys("Ojodu");
         //locate state field and input state
         driver.findElement(xpath("//*[@id=\"app-content-wrapper\"]/div[2]/section/section/aside/div[2]/div/div/form/div[6]/div/div/select")).sendKeys("Lagos");
         Thread.sleep(10000);
         //locate LGA field and input LGA
-        driver.findElement(name("areaId")).sendKeys("Kosofe");
+        driver.findElement(name("areaId")).sendKeys("Ikeja");
         //locate and click on the save changes button
         driver.findElement(xpath("//*[@id=\"app-content-wrapper\"]/div[2]/section/section/aside/div[2]/div/div/form/div[8]/div[1]/button")).click();
         Thread.sleep(10000);
